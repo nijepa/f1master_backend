@@ -12,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const db = require("./app/models");
 const Role = db.role;
+// UNCOMMENT FOLLOWING LINES FIRST TIME YOU RUN THIS SERVER TO GET INITIAL DATA, THEN COMMENT THEM AGAIN
 // db.sequelize.sync({force: true}).then(() => {
 //   console.log('Drop and Resync Db');
 //   initial();
